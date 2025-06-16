@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/octocat/Hello-World.git', branch: 'main'
+                git credentialsId: 'github-creds', git url: 'https://github.com/sandaalexandru/BasicDeclarativePipeline.git', branch: 'main'
             }
         }
 
